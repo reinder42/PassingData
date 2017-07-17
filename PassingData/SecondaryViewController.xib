@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondaryViewController" customModule="PassingData" customModuleProvider="target">
+            <connections>
+                <outlet property="textLabel" destination="UVH-9C-hUU" id="7fB-b9-JrK"/>
+                <outlet property="view" destination="iN0-l3-epB" id="q2D-V3-Ky7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVH-9C-hUU">
+                    <rect key="frame" x="20" y="323" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tj-1E-PDF">
+                    <rect key="frame" x="113" y="374" width="148" height="30"/>
+                    <state key="normal" title="Send some data back"/>
+                    <connections>
+                        <action selector="onButtonTap" destination="-1" eventType="touchUpInside" id="uM0-ts-kcq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UVH-9C-hUU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2BD-DU-x80"/>
+                <constraint firstItem="7tj-1E-PDF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L15-U5-WM8"/>
+                <constraint firstItem="7tj-1E-PDF" firstAttribute="top" secondItem="UVH-9C-hUU" secondAttribute="bottom" constant="30" id="Uot-PR-H2D"/>
+                <constraint firstAttribute="trailing" secondItem="UVH-9C-hUU" secondAttribute="trailing" constant="20" id="fv5-FT-5jr"/>
+                <constraint firstItem="UVH-9C-hUU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vcb-Yq-6nO"/>
+                <constraint firstItem="UVH-9C-hUU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="w5L-pX-0NR"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
